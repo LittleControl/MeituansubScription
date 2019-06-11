@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    background-color: #bfa;
+    // position: absolute;
+    float: left;
+
+    >div {
+        box-sizing: border-box;
+        width: 48%;
+        float: left;
+
+        a {
+            display: inline-block;
+        }
+
+        .dropdown {
+            width: 10%;
+            float: right;
+            height: 100%;
+
+            ul {
+                display: none;
+            }
+
+            &:hover ul {
+                display: block;
+            }
+        }
+    }
+
+    .left {
+        text-align: left;
+        margin-left: 2%;
+    }
+
+    .right {
+        text-align: right;
+        margin-right: 2%;
+    }
+}
+
+.navsearch {
+    float: left;
+    height: 15%;
+    width: 96%;
+    background-color: pink;
+    box-sizing: border-box;
+    margin-left: 2%;
+    margin-right: 2%;
+
+    .logo {
+        float: left;
+        height: 100%;
+        width: 20%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 80%;
+            height: 50%;
+            display: inline-block;
+        }
+    }
+
+    .search_bar {
+        height: 100%;
+        width: 60%;
+        float: left;
+        
+        .main_bar {
+            width: 40%;
+            border: 2px solid burlywood;
+            margin-top: 1%;
+        
+            .search_title{
+                font-size: 28px;
+                border: 1px solid black;
+            }
+            .search_area{
+                width: 60%;
+                height: 30px;
+            }
+            .search_btn{
+                display: inline-block;
+                height: 30px;
+                width: 20%;
+            }
+        }
+    }
+    .servies{
+        width: 20%;
+        height: 100%;
+        background-color:blue;
+    }
+}
