@@ -17,13 +17,21 @@ body {
     overflow: hidden;
 }
 
+.any{
+    height: 100%;
+    overflow: auto;
+    position: relative;
+}
+
 .navbar {
     width: 100%;
-    height: 30px;
+    // height: 30px;
+    height: 3%;
     font-size: 16px;
     background-color: #bfa;
     // position: absolute;
     float: left;
+    position: relative;
 
     >div {
         box-sizing: border-box;
@@ -35,7 +43,7 @@ body {
         }
 
         .dropdown {
-            width: 10%;
+            width: 15%;
             float: right;
             height: 100%;
 
@@ -52,6 +60,10 @@ body {
     .left {
         text-align: left;
         margin-left: 2%;
+        .dropdown{
+            width: 8%;
+            float: left;
+        }
     }
 
     .right {
@@ -86,32 +98,129 @@ body {
 
     .search_bar {
         height: 100%;
-        width: 60%;
+        width: 50%;
         float: left;
-        
+
         .main_bar {
-            width: 40%;
+            margin-top: 5%;
+            width: 100%;
             border: 2px solid burlywood;
-            margin-top: 1%;
-        
-            .search_title{
-                font-size: 28px;
-                border: 1px solid black;
+            height: 40%;
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            align-items: baseline;
+
+            .search_title {
+                display: block;
+                box-sizing: content-box;
+                width: 15%;
+                float: left;
+                text-align: center;
+                font-size: 25px;
             }
-            .search_area{
+
+            .search_area {
+                display: block;
+                box-sizing: content-box;
                 width: 60%;
-                height: 30px;
-            }
-            .search_btn{
+                height: 50%;
                 display: inline-block;
+            }
+
+            .search_btn {
+                display: block;
+                box-sizing: content-box;
                 height: 30px;
-                width: 20%;
+                width: 19%;
+                display: inline-block;
+            }
+        }
+
+        .sup_text {
+            width: 100%;
+            height: 40%;
+            display: flex;
+            // text-align: center;
+            justify-content: space-around;
+        }
+    }
+
+    .servies {
+        margin-left:6%;
+        width: 20%;
+        height: 100%;
+        background-color: blue;
+        float: left;
+    }
+}
+
+.main {
+    float: left;
+    height: 72%;
+    width: 96%;
+    box-sizing: content-box;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: aquamarine;
+
+    .nav {
+        width: 100%;
+        height: 5%;
+        background-color: #fff;
+        ul {
+            display: flex;
+            li {
+                flex: 1;
             }
         }
     }
-    .servies{
-        width: 20%;
-        height: 100%;
-        background-color:blue;
+    .nav_area{
+        width: 100%;
+        height: 7%;
+        background-color: chartreuse;
     }
+    .main_body{
+        width: 100%;
+        height: 720px;
+        position:relative;
+        background-color: burlywood;
+        &:before{
+            content: "";
+            display: table;
+        }
+        >div{
+            text-align: center;
+            margin-top: 1%;
+            margin-bottom: -1%;
+            display: flex;
+            // justify-content: space-between;
+            .items{
+                margin:0 1% 1% 0;
+                img{
+                    display: inline-block;
+                    width: 98%;
+                }
+            }
+            .items{
+                font-size: 16px;
+                .hot_commit{
+                    font-size: 10px;
+                    color: red;
+                    text-align: right;
+                }
+            }
+        }
+    }
+    
+}
+.footer{
+    height: 60px;
+    position: absolute;
+    bottom: -100px;
+    width: 96%;
+    box-sizing: content-box;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: blueviolet;
 }
