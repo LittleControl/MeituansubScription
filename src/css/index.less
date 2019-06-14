@@ -5,6 +5,15 @@
 
 a {
     text-decoration: none;
+
+    &:link {
+        color: coral;
+
+        &:hover {
+            text-decoration: underline;
+
+        }
+    }
 }
 
 ul {
@@ -17,7 +26,7 @@ body {
     overflow: hidden;
 }
 
-.any{
+.any {
     height: 100%;
     overflow: auto;
     position: relative;
@@ -28,7 +37,7 @@ body {
     // height: 30px;
     height: 3%;
     font-size: 16px;
-    background-color: #bfa;
+    background-color:aliceblue;
     // position: absolute;
     float: left;
     position: relative;
@@ -60,8 +69,9 @@ body {
     .left {
         text-align: left;
         margin-left: 2%;
-        .dropdown{
-            width: 8%;
+
+        .dropdown {
+            width: 9%;
             float: left;
         }
     }
@@ -76,7 +86,7 @@ body {
     float: left;
     height: 15%;
     width: 96%;
-    background-color: pink;
+    background-color: aliceblue;
     box-sizing: border-box;
     margin-left: 2%;
     margin-right: 2%;
@@ -104,7 +114,7 @@ body {
         .main_bar {
             margin-top: 5%;
             width: 100%;
-            border: 2px solid burlywood;
+            border: 1px solid burlywood;
             height: 40%;
             display: flex;
             text-align: center;
@@ -147,10 +157,11 @@ body {
     }
 
     .servies {
-        margin-left:6%;
         width: 20%;
         height: 100%;
-        background-color: blue;
+        margin-top: 1%;
+        margin-left: 6%;
+        // background-color: blue;
         float: left;
     }
 }
@@ -167,44 +178,54 @@ body {
     .nav {
         width: 100%;
         height: 5%;
-        background-color: #fff;
+        background-color: aqua;
+
         ul {
             display: flex;
+
             li {
                 flex: 1;
             }
         }
     }
-    .nav_area{
+
+    .nav_area {
         width: 100%;
         height: 7%;
         background-color: chartreuse;
     }
-    .main_body{
+
+    .main_body {
         width: 100%;
         height: 720px;
-        position:relative;
+        position: relative;
         background-color: burlywood;
-        &:before{
+
+        &:before {
             content: "";
             display: table;
         }
-        >div{
+
+        >div {
             text-align: center;
             margin-top: 1%;
             margin-bottom: -1%;
             display: flex;
+
             // justify-content: space-between;
-            .items{
-                margin:0 1% 1% 0;
-                img{
+            .items {
+                margin: 0 1% 1% 0;
+
+                img {
                     display: inline-block;
                     width: 98%;
                 }
             }
-            .items{
+
+            .items {
                 font-size: 16px;
-                .hot_commit{
+
+                .hot_commit {
                     font-size: 10px;
                     color: red;
                     text-align: right;
@@ -212,9 +233,10 @@ body {
             }
         }
     }
-    
+
 }
-.footer{
+
+.footer {
     height: 60px;
     position: absolute;
     bottom: -100px;
