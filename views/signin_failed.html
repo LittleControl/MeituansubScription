@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>登录丑散网</title>
-    <link rel="stylesheet" href="./src/css/signin.css">
+    <title>丑散网</title>
+    <link rel="stylesheet" href="../src/css/signin.css">
 </head>
 
 <body>
     <div class="wrap">
         <div class="inner">
-            <form action="/signup" method="POST">
-                <legend>亲爱的用户,请注册</legend>
+            <form action="/signin" method="POST">
+                <legend>亲爱的用户,请登录</legend>
+                <p>亲,用户或密码不正确哦</p>
                 <div class="inputs">
                     <div class="name">
                         账户<input type="text" name="username"><br>
@@ -23,7 +24,7 @@
                     </div>
                 </div>
                 <div class="btns">
-                    <button type="submit">注册</button>
+                    <button type="submit">登录</button>
                 </div>
             </form>
         </div>

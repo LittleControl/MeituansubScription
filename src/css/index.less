@@ -8,11 +8,11 @@ a {
 
     &:link {
         color: coral;
+    }
 
-        &:hover {
-            text-decoration: underline;
+    &:hover {
+        text-decoration: underline;
 
-        }
     }
 }
 
@@ -24,6 +24,7 @@ html,
 body {
     height: 100%;
     overflow: hidden;
+    font-size: 14px;
 }
 
 .any {
@@ -36,8 +37,8 @@ body {
     width: 100%;
     // height: 30px;
     height: 3%;
-    font-size: 16px;
-    background-color:aliceblue;
+    font-size: 14px;
+    background-color: aliceblue;
     // position: absolute;
     float: left;
     position: relative;
@@ -55,9 +56,11 @@ body {
             width: 15%;
             float: right;
             height: 100%;
-
+            text-align: center;
             ul {
                 display: none;
+                background-color: beige;
+                text-align: center;
             }
 
             &:hover ul {
@@ -112,7 +115,7 @@ body {
         float: left;
 
         .main_bar {
-            margin-top: 5%;
+            margin-top: 3%;
             width: 100%;
             border: 1px solid burlywood;
             height: 40%;
@@ -159,7 +162,7 @@ body {
     .servies {
         width: 20%;
         height: 100%;
-        margin-top: 1%;
+        margin-top: 2%;
         margin-left: 6%;
         // background-color: blue;
         float: left;
@@ -190,6 +193,7 @@ body {
     }
 
     .nav_area {
+        font-size: 20px;
         width: 100%;
         height: 7%;
         background-color: chartreuse;
@@ -197,7 +201,7 @@ body {
 
     .main_body {
         width: 100%;
-        height: 720px;
+        height: 600px;
         position: relative;
         background-color: burlywood;
 
@@ -211,6 +215,10 @@ body {
             margin-top: 1%;
             margin-bottom: -1%;
             display: flex;
+
+            &:first-child {
+                margin-top: 2%;
+            }
 
             // justify-content: space-between;
             .items {
