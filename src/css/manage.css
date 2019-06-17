@@ -1,0 +1,65 @@
+.wrap {
+  overflow: auto;
+  border: none;
+  background-image: none;
+  background-color: antiquewhite;
+}
+.wrap .slidebar {
+  text-align: center;
+  font-size: 30px;
+  height: 100%;
+  width: 8%;
+  background-color: black;
+}
+.wrap .slidebar p {
+  color: blue;
+  display: inline-block;
+  margin: auto;
+  margin-bottom: 200px;
+}
+.wrap .inner {
+  height: 80%;
+  width: 80%;
+  border-radius: 10%;
+  border: none;
+}
+.wrap form {
+  font-size: 30px;
+  height: 80%;
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrap form legend {
+  color: blue;
+  text-align: center;
+}
+.wrap form table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+}
+.wrap form table tbody {
+  width: 100%;
+  height: 100%;
+  background-color: #bfa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.wrap form table tbody tr {
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap form table tbody tr td {
+  display: inline-block;
+  width: 25%;
+  border: 1px solid red;
+}

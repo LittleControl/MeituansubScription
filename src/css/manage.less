@@ -1,0 +1,73 @@
+.wrap {
+    overflow: auto;
+    border: none;
+    background-image: none;
+    background-color: antiquewhite;
+
+    .slidebar {
+        text-align: center;
+        font-size: 30px;
+        height: 100%;
+        width: 8%;
+        background-color: black;
+
+        p {
+            color: blue;
+            display: inline-block;
+            margin: auto;
+            margin-bottom: 200px;
+        }
+    }
+
+    .inner {
+        height: 80%;
+        width: 80%;
+        border-radius: 10%;
+        border: none;
+    }
+
+    form {
+        // background-color: pink;
+        font-size: 30px;
+        height: 80%;
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        legend{
+            color: blue;
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            height: 100%;
+            tbody {
+                width: 100%;
+                height: 100%;
+                background-color: #bfa;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                text-align: center;
+                
+                tr {
+                    font-size: 20px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    // border: 1px solid red;
+                    
+                    td {
+                        display: inline-block;
+                        width: 25%;
+                        border: 1px solid red;
+                    }
+                }
+            }
+        }
+    }
+}
