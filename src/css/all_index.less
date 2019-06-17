@@ -1,0 +1,45 @@
+.wrap {
+    height: 100%;
+    width: 100%;
+    border: 1px solid red;
+    position: relative;
+    background-image: url(../img/bg_1.jpg);
+    .inner {
+        height: 50%;
+        width: 30%;
+        // background-color: pink;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        flex-wrap: wrap;
+        border: 1px solid red;
+
+        div {
+            // border: 1px solid blue;
+            height: 40%;
+            width: 60%;
+            text-align: center;
+            position: relative;
+            a {
+                width: 100%;
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                button {
+                    font-size: 30px;
+                    background-color: skyblue;
+                    display: inline-block;
+                    width: 50%;
+                    height: 20%;
+                }
+            }
+        }
+
+    }
+}
